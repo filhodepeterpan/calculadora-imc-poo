@@ -33,7 +33,7 @@ namespace exercicioPooIMC
                 }
             }
 
-            double imc = calculadora.calculaIMC(pessoa);
+            double imc = Math.Round(calculadora.calculaIMC(pessoa), 1);
             string classificacao = calculadora.classificaPessoa(pessoa);
 
             Console.WriteLine($@"
